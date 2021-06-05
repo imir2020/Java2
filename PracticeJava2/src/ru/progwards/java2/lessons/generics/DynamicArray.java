@@ -28,13 +28,13 @@ public class DynamicArray<T> {
 
     }
 
-
+//В данном методе часть массива после вставляемого элемента нужно сдвигать, то есть частично перекопировать в новый массив.
     T[] insert(int pos, T element) {
         abs[pos] = element;
         return abs;
     }
 
-    //Нужно установить в метод обработку исключений
+
     T[] remove(int pos) {
         abs[pos] = null;
         return abs;
