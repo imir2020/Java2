@@ -28,7 +28,7 @@ public class DynamicArray<T> {
 
     }
 
-    //Нужно установить в метод обработку исключений
+
     T[] insert(int pos, T element) {
         abs[pos] = element;
         return abs;
