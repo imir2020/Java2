@@ -22,7 +22,7 @@ public class DynamicArray<T> {
             }
         }
         if (abs[abs.length - 1] != null) {
-            abs = Arrays.copyOf(abs, LENGTH * 2);//T[]) new DynamicArray[LENGTH*2];//DynamicArray<T>
+            abs = Arrays.copyOf(abs, LENGTH * 2);
 
         }
 
@@ -59,5 +59,7 @@ public class DynamicArray<T> {
         System.out.println(one.get(3));
         one.size();
         System.out.println(one.size());
+        one.insert(1, 19);
+        System.out.println(one.insert(1, 19));
     }
 }
