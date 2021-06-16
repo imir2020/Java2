@@ -1,6 +1,6 @@
 package ru.progwards.java2.lessons.generics;
 
-public class Fruit {
+public class Fruit {//было бы лучше сделать класс абстрактным.
     private  float weight;
     public float getWeight() {
         return weight;
@@ -9,5 +9,4 @@ public class Fruit {
     public static void main(String[] args) {
 
     }
-
 }

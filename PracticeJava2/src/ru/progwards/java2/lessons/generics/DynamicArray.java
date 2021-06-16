@@ -30,10 +30,10 @@ public class DynamicArray<T> {
 
     //В данном методе часть массива после вставляемого элемента нужно сдвигать, то есть частично перекопировать в новый массив.
     T[] insert(int pos, T element) {
-            abs = Arrays.copyOf(abs, abs.length + 1);
+        abs = Arrays.copyOf(abs, abs.length + 1);
         //System.out.println(abs.length + " insert");
         for (int i = abs.length - 1; i > pos; i--) {
-           abs[i] = abs[i - 1];
+            abs[i] = abs[i - 1];
         }
         abs[pos] = element;
         return abs;
@@ -61,18 +61,18 @@ public class DynamicArray<T> {
         one.add(114);
         one.add(373);
         //System.out.println(one.get(3));
-       // System.out.println(one.size());
+        // System.out.println(one.size());
 
-       // System.out.println(one.size());
-       // one.insert(1, 19);
+        // System.out.println(one.size());
+        // one.insert(1, 19);
 
         one.insert(4, 19);
-       // System.out.println(one.insert(0, 19));
-        for (int i = 0; i < one.size() ; i++) {
+        // System.out.println(one.insert(0, 19));
+        for (int i = 0; i < one.size(); i++) {
             System.out.println(one.get(i));
         }
         one.remove(0);
-        for (int i = 0; i < one.size() ; i++) {
+        for (int i = 0; i < one.size(); i++) {
             System.out.println(one.get(i) + " remove");
         }
         System.out.println(one.size());

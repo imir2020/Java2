@@ -6,7 +6,6 @@ public class ArraySort {
     public ArraySort() {
     }
 
-
     public static <T extends Comparable> T[] sort(T[] list) {
         for (int i = 0; i < list.length; i++) {
             for (int j = i + 1; j < list.length; j++) {
