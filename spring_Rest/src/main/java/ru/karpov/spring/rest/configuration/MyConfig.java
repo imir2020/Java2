@@ -20,7 +20,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 public class MyConfig {
 
-    //All methods gives from applicationContext.xml file in any spring project
+    //All methods exist from applicationContext.xml file in any spring projects
     @Bean
     public DataSource dataSource() {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();

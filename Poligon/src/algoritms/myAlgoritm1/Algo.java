@@ -24,6 +24,7 @@ public class Algo {
         if (rawSize == 0) return;
         for (int i = 0; i < rawSize; i++) {
             int random = (int) (Math.random() * 10);
+
             String randInt = Integer.toBinaryString(random);
             listOfRandom.add(i, randInt);
         }
