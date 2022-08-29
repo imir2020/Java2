@@ -2,8 +2,10 @@ package supportdev.random;
 
 public class RandomNumbers{
 
-    Integer[] massiveOfRandom(int length) {
-        Integer[] numbers = new Integer[length];
+
+
+    public int[] massiveOfRandom(int length) {
+        int[] numbers = new int[length];
         for (int i = 0; i < length; i++) {
             numbers[i] = (int)(Math.random()*length);
         }

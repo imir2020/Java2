@@ -9,7 +9,7 @@ import java.util.Random;
 For compress generate info before record it in file.txt
  */
 public class Compress {
-    private static final int SIZE = 16;
+    private static final int SIZE = 128;
     private Dictionary dict;
 
     //generate info in this method
@@ -61,7 +61,7 @@ public class Compress {
     //Теперь нужен метод, который будет сжимать данные
     public String compress() {
         String temp = "";
-        dict = new Dictionary();
+         dict = new Dictionary();
         int count = 0;
         int halfBite = 4;
         int i = 0;
@@ -78,7 +78,7 @@ public class Compress {
                 }
                 //System.out.println(likeKey + " key");
                 temp += dict.getDictionary().get(likeKey);//Заменить на конкатенацию строки, причём заменить на метод  StringBuilder.append()
-               // System.out.println(temp + " temp");
+                // System.out.println(temp + " temp");
                 //  System.out.println(Arrays.toString(buff) + " 1");//test
                 for (int j = 0; j < halfBite; j++) {
                     buff[j] = null;
@@ -90,8 +90,6 @@ public class Compress {
         System.out.println(temp + " 2");//test
         return temp;
     }
-
-    //Теперь нужен метод№2, который буде смешивать и сжимать данные
 
 
     String generateOfRandom() {

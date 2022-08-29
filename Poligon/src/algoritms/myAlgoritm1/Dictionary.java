@@ -8,8 +8,8 @@ import java.util.Map;
  */
 public class Dictionary {
 
-    private static Map<String, String> dictionary = new HashMap<>();
-    {
+    private static final Map<String, String> dictionary = new HashMap<>();
+    static {
         dictionary.put("1000","a");
         dictionary.put("1100","b");
         dictionary.put("1110","c");
